@@ -50,10 +50,6 @@ a {
 }
 
 
-.float-right {
-    float: right;
-}
-
 /* spacing between images - when compressed window spacing is between each image */
 .col-md-6 {
     padding-bottom: 40px;
