@@ -4,6 +4,8 @@
 <head>
 
     <title>About Me</title>
+    <!-- reset css -->
+    <link rel="reset" type="text/css" href="reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
@@ -28,16 +30,17 @@
 
 
 <body>
+    <!-- class - not collapsing bar -->
+    <nav class="navbar navbar-expand-md" role='navigation'>
 
-    <nav class="navbar navbar-expand-md"  role='navigation'>
-        <span class="navbar-brand">Robyn Heslop</span>
+        <span class="navbar-text">Robyn Heslop</span>
 
-          <ul class="navbar-nav ml-auto" li class="nav-item active">
+        <ul class="navbar-nav navbar-expand ml-auto" li class="nav-item active">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+                <a class="nav-link border-right" href="index.html">About<span class="sr-only">(current)</span></a>
             </li>
-            <li>
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <li class="nav-item">
+                <a class="nav-link border-right" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -48,7 +51,7 @@
 
     <div class="container">
 
-       
+       <!-- page heading  -->
         <div class="row">
             <div class="col-md-12">
                 <h2 class="page-heading">About Me</h2>
@@ -63,6 +66,8 @@
         <div class="row">
             <div class ="col-md-12">
                 <div>
+                    <!--set image width to 500px fixed across viewports
+                         class index image will float it left and give the image padding/margin -->
                     <img class= "index-image" src="images/IMG_4114.jpg" alt="Robyn photo" width="500px">
                 </div>
                 

@@ -1,20 +1,48 @@
-.navbar-brand {
+* {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.navbar-text {
     background-color: lightgray;
     padding: 15px;
     color: #333;
-    margin: 0px;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 30px;
+
 }
 
 .navbar.navbar-expand-md {
     background-color: mediumaquamarine;
-
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
+.nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.border-left {
+    border-left: solid 2px white;
+    padding-left: 20px;
+}
+
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+  }
+
 .container {
     background-color: lightgray;
     padding: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -72,15 +100,33 @@ a {
 
 
 
-@media screen and (max-width: 768px) {
-    .nav {b
-        float: none;
+@media screen and (max-width: 767.98px) {
+    .navbar {
+        display: block!important;
+    }
+    .navbar-text {
+        display: block!important;
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
     }
 
-
+    .nav-link {
+        margin: 20px;
+    }
 
     .column {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
     }
+
+
+
+
+@media (min-width: 992px){
+    .navbar li {
+        padding-left : 1em;
+        padding-right : 1em;
+    }
+}
