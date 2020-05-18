@@ -38,14 +38,10 @@ a {
     vertical-align: middle;
     padding-bottom: 30px;
     border-bottom: 1px solid green;
+    margin-bottom: 40px;
     
 }
 
-
-/* spacing from border */
-.first-row {
-    padding-top: 30px;
-}
 
 /* spacing between images - when compressed window spacing is between each image */
 .col-md-6 {
