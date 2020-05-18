@@ -1,0 +1,83 @@
+.navbar-brand {
+    background-color: lightgray;
+    padding: 15px;
+    color: #333;
+    margin: 0px;
+}
+
+.navbar.navbar-expand-md {
+    background-color: mediumaquamarine;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.container {
+    background-color: lightgray;
+    padding: 30px;
+}
+
+
+.btn {
+    background-color:lightgray;
+    margin-left: 0px;
+}
+
+a {
+    color: white;
+}
+
+
+
+/* portoflio elements below */
+
+.page-heading {
+    text-align: left;
+    font-weight: bold;
+    font-size: 46px;
+    vertical-align: middle;
+    padding-bottom: 30px;
+    border-bottom: 1px solid green;
+    
+}
+
+
+/* spacing from border */
+.first-row {
+    padding-top: 30px;
+}
+
+/* spacing between images - when compressed window spacing is between each image */
+.col-md-6 {
+    padding-bottom: 40px;
+
+}
+
+.card-title {
+    background-color: mediumaquamarine;
+    opacity: 0.7;
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    
+}
+
+.btn {
+    background-color: mediumaquamarine;
+    color: #333;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .nav {b
+        float: none;
+    }
+
+
+
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
