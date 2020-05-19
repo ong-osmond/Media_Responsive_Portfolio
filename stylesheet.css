@@ -2,22 +2,40 @@
     font-family: 'Julius Sans One', sans-serif;
 }
 
-.navbar-text {
+.navbar-brand {
     background-color: lightgray;
     padding: 15px;
     color: #333;
     font-size: larger;
     font-weight: bold;
-    margin-left: 30px;
 
 }
 
+
+#about-spacing {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#portfolio-spacing {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#contact-spacing {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/* background colour and spacing of WHOLE navbar */
 .navbar.navbar-expand-md {
     background-color: mediumaquamarine;
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
+/* class */
 .nav-link {
     padding-right: 15px;
     padding-left: 15px;
@@ -26,16 +44,10 @@
 }
 
 
-.border-left {
-    border-left: solid 2px white;
-    padding-left: 20px;
-}
 
-.navbar-nav > li{
-    padding-left:10px;
-    padding-right:10px;
-  }
 
+
+/* space around content */
 .container {
     background-color: lightgray;
     padding: 30px;
@@ -102,18 +114,56 @@ a {
 
 @media screen and (max-width: 767.98px) {
     .navbar {
-        display: block!important;
+        display: block!important; 
+        padding-left: 0px;
+        padding-right: 0px;
     }
-    .navbar-text {
+    .navbar-brand {
         display: block!important;
         margin-left: 0px;
         width: 100%;
         text-align: center;
     }
-
-    .nav-link {
-        margin: 20px;
+    
+    #brand-width {
+        width: 100%;
     }
+    .navbar-nav {
+        text-align: center;
+        margin: 0 auto;      
+    }
+
+    #nav-center {
+        width: 100%;
+        text-align: center;
+    }
+
+    #about-spacing {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #portfolio-spacing {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #contact-spacing {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
 
     .column {
       -ms-flex: 100%;
@@ -124,9 +174,9 @@ a {
 
 
 
-@media (min-width: 992px){
-    .navbar li {
-        padding-left : 1em;
-        padding-right : 1em;
-    }
-}
+
+
+
+
+
+|
