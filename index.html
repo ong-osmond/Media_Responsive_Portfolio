@@ -40,73 +40,113 @@
 
 
 <body>
-    <!-- class - not collapsing bar -->
-    <nav class="navbar navbar-expand-md" role='navigation'>
 
-        <span class="navbar-brand" id="brand-width">Robyn Heslop</span>
 
-        <ul class="navbar-nav navbar-expand ml-auto" li class="nav-item active">
+        <!-- nav bar collapsing when viewport is smaller than MD -->
+        <nav class="navbar navbar-expand-md" role='navigation'>
 
-            <li class="nav-item">
-                <a class="nav-link border-right" id="about-spacing" href="index.html">About<span class="sr-only">(current)</span></a>
-            </li>
+            <!-- navbar brand -->
+            <span class="navbar-brand">Robyn Heslop</span>
 
-            <li class="nav-item">
-                <a class="nav-link border-right" id="portfolio-spacing" href="portfolio.html">Portfolio</a>
-            </li>
+            <!-- toggle button for collapsed navbar display NONE-->
+            <button class="navbar-toggler d-none" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <li class="nav-item">
-                <a class="nav-link" id="contact-spacing" href="contact.html">Contact</a>
-            </li>
-        </ul>
+            <!-- show items when navbar collapsed -->
+            <div class="collapse navbar-collapse show" id="navbarTogglerDemo02">
 
-    </nav>
+                <!-- list horizontally + float list items left size MD + centre content when size SM -->
+                <ul class="navbar-nav flex-row ml-md-auto justify-content-center">
 
-    <div class="container">
 
-       <!-- page heading  -->
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="page-heading">About Me</h2>
+                    <li class="nav-item active">
+                        <a class="nav-link border-right" id="about-spacing" href="index.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link border-right" id="portfolio-spacing" href="portfolio.html">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-spacing" href="contact.html">Contact<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
             </div>
-        
-        </div>
-        
-        
-        
-        
-        
-        <div class="row">
-            <div class ="col-md-12">
-                <div>
-                    <!--set image width to 500px fixed across viewports
+
+
+        </nav>
+
+
+
+        <div class="container">
+
+            <!-- page heading  -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="page-heading">About Me</h2>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <!--set image width to 500px fixed across viewports
                          class index image will float it left and give the image padding/margin -->
-                    <img class= "index-image" src="images/IMG_4114.jpg" alt="Robyn photo" width="500px">
-                </div>
-                
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec erat lacus. Pellentesque sodales eu purus et sodales. Sed vitae faucibus risus. Mauris hendrerit turpis orci, sit amet tempor urna molestie sed. Curabitur efficitur quam sed turpis volutpat dapibus. Aenean fermentum malesuada facilisis. Phasellus vitae faucibus odio, non rutrum nisl. Donec non nunc sit amet nisi cursus commodo. Quisque nibh ipsum, maximus quis arcu et, viverra blandit elit. Donec sem enim, lobortis vitae dignissim eget, finibus nec lorem. Aenean ut dignissim nulla.
-                    </p>
-                    <p> 
-                        Morbi elit tellus, tincidunt et orci vel, euismod sagittis ex. Nulla elementum, nibh eu efficitur   tempus, dui nisl tempus ligula, vel vestibulum dui dui at justo. Mauris porta justo ac felis tincidunt, vitae accumsan enim tristique. Nullam rutrum turpis in velit porta lacinia. Vestibulum nec sem sed neque scelerisque gravida nec ac arcu. Proin quis efficitur dolor. Cras feugiat auctor ex id venenatis. Integer sagittis dignissim tellus sed rhoncus.
+                        <img class="index-image" src="images/IMG_4114.jpg" alt="Robyn photo" width="500px">
+                    </div>
+
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec erat lacus.
+                            Pellentesque sodales eu purus et sodales. Sed vitae faucibus risus. Mauris hendrerit turpis
+                            orci, sit amet tempor urna molestie sed. Curabitur efficitur quam sed turpis volutpat
+                            dapibus. Aenean fermentum malesuada facilisis. Phasellus vitae faucibus odio, non rutrum
+                            nisl. Donec non nunc sit amet nisi cursus commodo. Quisque nibh ipsum, maximus quis arcu et,
+                            viverra blandit elit. Donec sem enim, lobortis vitae dignissim eget, finibus nec lorem.
+                            Aenean ut dignissim nulla.
                         </p>
-                    <p> 
-                        Vivamus fermentum iaculis nisi, quis laoreet lectus luctus at. Vestibulum at metus sem. Duis a eros feugiat, volutpat nulla vitae, tempus nibh. Aenean id porttitor enim. Morbi consequat erat velit, id tincidunt eros venenatis vel. Etiam ultrices pellentesque tempor. Sed a scelerisque orci. Vivamus sagittis blandit dui ac feugiat. Praesent consequat viverra quam ut placerat. Ut dignissim efficitur arcu vel sodales. Donec dignissim mollis arcu eget convallis. Nunc mattis, tortor ac porta porta, elit risus maximus elit, in tempus ex lorem eget eros.
-                    </p>
+                        <p>
+                            Morbi elit tellus, tincidunt et orci vel, euismod sagittis ex. Nulla elementum, nibh eu
+                            efficitur tempus, dui nisl tempus ligula, vel vestibulum dui dui at justo. Mauris porta
+                            justo ac felis tincidunt, vitae accumsan enim tristique. Nullam rutrum turpis in velit porta
+                            lacinia. Vestibulum nec sem sed neque scelerisque gravida nec ac arcu. Proin quis efficitur
+                            dolor. Cras feugiat auctor ex id venenatis. Integer sagittis dignissim tellus sed rhoncus.
+                        </p>
+                        <p>
+                            Vivamus fermentum iaculis nisi, quis laoreet lectus luctus at. Vestibulum at metus sem. Duis
+                            a eros feugiat, volutpat nulla vitae, tempus nibh. Aenean id porttitor enim. Morbi consequat
+                            erat velit, id tincidunt eros venenatis vel. Etiam ultrices pellentesque tempor. Sed a
+                            scelerisque orci. Vivamus sagittis blandit dui ac feugiat. Praesent consequat viverra quam
+                            ut placerat. Ut dignissim efficitur arcu vel sodales. Donec dignissim mollis arcu eget
+                            convallis. Nunc mattis, tortor ac porta porta, elit risus maximus elit, in tempus ex lorem
+                            eget eros.
+                        </p>
+                    </div>
+
                 </div>
+
+
+
 
             </div>
 
 
 
-
         </div>
 
-
-
-    </div>
-
-
-
+        <footer>
+            <nav class="navbar d-flex justify-content-center" id="footer-copyright">
+                <span class="nav-item p-3">Copyright</span>
+            </nav>
+        </footer>
+   
 </body>

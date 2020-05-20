@@ -34,94 +34,114 @@
 
 </head>
 
-<body>
+<body class="Site">
 
 
-            <nav class="navbar navbar-expand-md"  role='navigation'>
+    <div id="wrapper">
+        <nav class="navbar navbar-expand-md" role='navigation'>
 
-                <span class="navbar-brand">Robyn Heslop</span>
+            <span class="navbar-brand">Robyn Heslop</span>
 
-        
-                <ul class="navbar-nav navbar-expand ml-auto" li class="nav-item active">
-                    
-                    <li class="nav-item">
+            <button class="navbar-toggler d-none" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse show" id="navbarTogglerDemo02">
+                <ul class="navbar-nav flex-row ml-md-auto d-md-flex justify-content-sm-center">
+
+
+                    <li class="nav-item ">
                         <a class="nav-link border-right" id="about-spacing" href="index.html">About</a>
                     </li>
 
-                    <li class="nav-item"> 
+                    <li class="nav-item">
                         <a class="nav-link border-right" id="portfolio-spacing" href="portfolio.html">Portfolio</a>
                     </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" id="contact-spacing" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" id="contact-spacing" href="contact.html">Contact<span
+                                class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-        
+            </div>
+
+
+        </nav>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="page-heading">Contact</h2>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-md-12">
+
+
+
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter name">
+                        </div>
+
+
+
+
+
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" aria-describedby="emailHelp"
+                                placeholder="Enter email">
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" placeholder="Write a brief message here" rows="6"></textarea>
+                        </div>
+
+
+
+
+                        <div class="form-check">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </form>
+
+
+
+                    <div class="push"></div>
+
+                </div>
+
+            </div>
+
+
+        <div class=flex-grow-1></div>
+
+
+        </div>
+
+        <footer class="footer">
+            <nav class="navbar d-flex justify-content-center" id="footer-copyright-notfull">
+                <span class="nav-item p-3">Copyright</span>
             </nav>
-       
+        </footer>
 
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="page-heading">Contact</h2>
-               
-            </div>
-        
-        </div>
- 
-        <div class="row" >
-            
-            
-            <div class="col-md-12" >
-               
-
-
-                <form>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">Name</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter name">
-                    </div>
-
-
-
-
-
-
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
-                    </div>
-
-
-
-
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Message</label>
-                        <textarea class="form-control" placeholder="Write a brief message here" rows="6"></textarea>
-                    </div>
-
-
-
-
-                    <div class="form-check">
-                        <button type="submit" class="btn">Submit</button>
-                    </div>
-                  </form>
-
-
-
-
-               
-            </div>
-        
-        </div>
-
-
-
-
-
+    
     </div>
-
 
 </body>
