@@ -1,5 +1,5 @@
 * {
-    font-family: 'Julius Sans One', sans-serif;
+
 }
 
 body {
@@ -9,9 +9,27 @@ body {
     /* to fit footer */
 }
 
+
+
+.navbar {
+    font-family: 'Julius Sans One', sans-serif;    
+    background-color: rgb(0, 138, 196);
+}
+
+
+
+/* spacing of top navbar */
+.navbar.navbar-expand-md {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+
+/* heading of top navbar */
 .navbar-brand {
     background-color:#fafdff;
-    opacity: 2.0;
     padding: 15px;
     color: #333;
     font-size: 30px;
@@ -19,13 +37,17 @@ body {
 
 }
 
+/* colour of links of lists white */
+li a {
+    color: white;
+}
+
+/* active item on navbar */
 .nav-item.active {
     font-weight: bold;
 }
 
-#float-right {
-    float: right;
-}
+
 
 
 /* override the bootstrap css for margings and padding - has to be # */
@@ -67,12 +89,6 @@ body {
 
 
 
-/* background colour and spacing of WHOLE navbar */
-.navbar.navbar-expand-md {
-    background-color: rgb(0, 138, 196);
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
 
 
 
@@ -82,6 +98,7 @@ body {
 
 /* space around content */
 .container {
+    font-family: 'Montserrat', sans-serif;
     background-color: #fafdff;
     /* T L R padding 30px */
     padding: 30px;
@@ -99,15 +116,12 @@ body {
 
 
 
-/* colour of links of lists white */
-li a {
-    color: white;
-}
 
 
 /* format the title of each page contents */
 .page-heading {
     text-align: left;
+    font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
     font-size: 46px;
     /* position in middle of it's row  */
@@ -117,6 +131,7 @@ li a {
     margin-bottom: 40px;
     
 }
+
 
 /* image on about me page */
 .index-image {
@@ -128,38 +143,38 @@ li a {
 }
 
 
-/* spacing between images - when compressed window spacing is between each image */
+/* spacing between images in portforlio- when compressed window spacing is between each image */
 .col-md-6 {
     padding-bottom: 40px;
 
 }
 
+/* text overlaying portfolio images */
 .card-title {
-    background-color: mediumturquoise;
-    opacity: 0.7;
+    background-color: rgb(0, 138, 196);
+    color: black;
+    opacity: 0.8;
+    font-weight: bold;
     width: 100%;
     text-align: center;
-    padding: 4px;
+    margin: 0px;
     
 }
 
+/* button to submit contact form */
 .btn {
     background-color:rgb(0, 138, 196);
     color: white;
 }
 
 
-.Site {
-    position: relative;
-    
-}
+
 
 /* formatting the footer */
 #footer-copyright {
     position: sticky;
     top: 0;
     border-top: 15px solid white;
-    background-color:rgb(0, 138, 196);
     color: white;
     font-weight: bold;
     width: 100%;
@@ -183,7 +198,43 @@ li a {
     width: 100%;
 }
 
+@media screen and (max-width: 320) {
+    .container {
+        width: 100%;
+        padding-bottom: 0px;
+    }
 
+    #footer.copyright {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .navbar.navbar-expand-md {
+        display: block; 
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+    .navbar-brand {
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }    
+
+    .justify.content.center {
+        justify-content: center!important;
+    }
+
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    
+}
 @media screen and (max-width: 575.99px) {
     .container {
         width: 100%;
@@ -229,7 +280,7 @@ li a {
 
 @media (max-width: 768px) {
 
-/* content fills page  */
+    /* content fills page  */
     .container {
         width: 100%;
     }
