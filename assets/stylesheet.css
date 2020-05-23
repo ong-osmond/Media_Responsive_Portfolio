@@ -202,15 +202,7 @@ h5 {
         /* stacked navbar - elimitating padding from navbar - otherwise background colours around brand are wrong */
         padding-left: 0px;
         padding-right: 0px;
-
-
-        
     }
-
-    .nav-link {
-        justify-content: center;
-    }
-    
 } 
 
 /* any screen 980 or larger */
