@@ -28,7 +28,11 @@
     <!-- stylesheet.css created by me -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <!-- linking google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <!-- linking font awesome -->
+    <script src="https://kit.fontawesome.com/97fa449461.js" crossorigin="anonymous"></script>
+
 
 
 
@@ -42,112 +46,120 @@
 <body>
 
 
-        <!-- nav bar collapsing when viewport is smaller than MD -->
-        <nav class="navbar navbar-expand-md" role='navigation'>
+    <!-- nav bar collapsing when viewport is smaller than MD -->
+    <nav class="navbar navbar-expand-md" role='navigation'>
 
-            <!-- navbar brand -->
-            <span class="navbar-brand">Robyn Heslop</span>
+        <!-- highlight of navbar -->
+        <span class="navbar-text">Robyn Heslop</span>
 
-            <!-- toggle button for collapsed navbar display NONE-->
-            <button class="navbar-toggler d-none" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- toggle button for collapsed navbar display NONE-->
+        <button class="navbar-toggler d-none"></button>
 
-            <!-- show items when navbar collapsed -->
-            <div class="collapse navbar-collapse show" id="navbarTogglerDemo02">
+        <!-- when navbar collapses (smaller than MD) show content -->
+        <div class="collapse navbar-collapse show">
 
-                <!-- list horizontally + float list items left size MD + centre content when size SM -->
-                <ul class="navbar-nav flex-row ml-md-auto justify-content-center">
+            <!-- list horizontally + float list items left size MD + centre content when size SM -->
+            <ul class="navbar-nav flex-row ml-md-auto  justify-content-sm-center">
+
+                <!-- list item INDEX ACTIVE -->
+                <li class="nav-item active">
+                    <!-- border to the right of item -->
+                    <!-- spacing ID to format navbar - has to be ID to overwrite bootstrap CSS -->
+                    <a class="nav-link border-right" id="about-spacing" href="index.html">About</a>
+                </li>
+
+                <!-- list item portfolio -->
+                <li class="nav-item">
+                    <!-- border to the right of item -->
+                    <!-- spacing ID to format navbar - has to be ID to overwrite bootstrap CSS -->
+                    <a class="nav-link border-right" id="portfolio-spacing" href="portfolio.html">Portfolio</a>
+                </li>
+
+                <!-- list item Contact -->
+                <li class="nav-item">
+                    <!-- end of list - no right border -->
+                    <!-- spacing ID to format navbar - has to be ID to overwrite bootstrap CSS -->
+                    <a class="nav-link" id="contact-spacing" href="contact.html">Contact</a>
+
+                </li>
+            </ul>
+        </div>
 
 
-                    <li class="nav-item active">
-                        <a class="nav-link border-right" id="about-spacing" href="index.html">About</a>
-                    </li>
+    </nav>
 
-                    <li class="nav-item">
-                        <a class="nav-link border-right" id="portfolio-spacing" href="portfolio.html">Portfolio</a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" id="contact-spacing" href="contact.html">Contact<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
+
+    <div class="container">
+
+        <!-- Row 1 page heading  -->
+        <div class="row">
+            <!-- fill container width with heading -->
+            <div class="col-md-12">
+                <h2 class="page-heading">About Me</h2>
             </div>
-
-
-        </nav>
-
-
-
-        <div class="container">
-
-            <!-- page heading  -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="page-heading">About Me</h2>
-                </div>
-
-            </div>
-
-
-
-
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div>
-                        <!--set image width to 500px fixed across viewports
-                         class index image will float it left and give the image padding/margin -->
-                        <img class="index-image" src="images/IMG_4114.jpg" alt="Robyn photo" width="500px">
-                    </div>
-
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec erat lacus.
-                            Pellentesque sodales eu purus et sodales. Sed vitae faucibus risus. Mauris hendrerit turpis
-                            orci, sit amet tempor urna molestie sed. Curabitur efficitur quam sed turpis volutpat
-                            dapibus. Aenean fermentum malesuada facilisis. Phasellus vitae faucibus odio, non rutrum
-                            nisl. Donec non nunc sit amet nisi cursus commodo. Quisque nibh ipsum, maximus quis arcu et,
-                            viverra blandit elit. Donec sem enim, lobortis vitae dignissim eget, finibus nec lorem.
-                            Aenean ut dignissim nulla.
-                        </p>
-                        <p>
-                            Morbi elit tellus, tincidunt et orci vel, euismod sagittis ex. Nulla elementum, nibh eu
-                            efficitur tempus, dui nisl tempus ligula, vel vestibulum dui dui at justo. Mauris porta
-                            justo ac felis tincidunt, vitae accumsan enim tristique. Nullam rutrum turpis in velit porta
-                            lacinia. Vestibulum nec sem sed neque scelerisque gravida nec ac arcu. Proin quis efficitur
-                            dolor. Cras feugiat auctor ex id venenatis. Integer sagittis dignissim tellus sed rhoncus.
-                        </p>
-                        <p>
-                            Vivamus fermentum iaculis nisi, quis laoreet lectus luctus at. Vestibulum at metus sem. Duis
-                            a eros feugiat, volutpat nulla vitae, tempus nibh. Aenean id porttitor enim. Morbi consequat
-                            erat velit, id tincidunt eros venenatis vel. Etiam ultrices pellentesque tempor. Sed a
-                            scelerisque orci. Vivamus sagittis blandit dui ac feugiat. Praesent consequat viverra quam
-                            ut placerat. Ut dignissim efficitur arcu vel sodales. Donec dignissim mollis arcu eget
-                            convallis. Donec quis commodo libero. Vestibulum metus ipsum, vehicula id luctus vel, dictum eget neque. Integer eu lacus eu lorem ultrices ultricies. Ut a enim facilisis lacus cursus luctus vitae condimentum magna.
-                        </p>
-
-                       
-                    </div>
-
-                </div>
-
-
-
-
-            </div>
-
-
 
         </div>
 
-        <footer>
-            <nav class="navbar d-flex justify-content-center" id="footer-copyright">
-                <span class="nav-item p-3">Copyright</span>
-            </nav>
-        </footer>
-   
+        <!-- Row 2 -->
+        <div class="row">
+           <!-- index fills th 12 columns of container -->
+            <div class="col-md-12">
+
+                <div>
+                    <!-- class index-image will set size, float left and give the image padding/margin -->
+                    <img class="index-image" src="images/IMG_4114.jpg" alt="Robyn photo">
+                </div>
+
+                <!-- lorem ipsum for text -->
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec erat lacus.
+                        Pellentesque sodales eu purus et sodales. Sed vitae faucibus risus. Mauris hendrerit turpis
+                        orci, sit amet tempor urna molestie sed. Curabitur efficitur quam sed turpis volutpat
+                        dapibus. Aenean fermentum malesuada.
+                    </p>
+                    <p>
+                        Morbi elit tellus, tincidunt et orci vel, euismod sagittis ex. Nulla elementum, nibh eu
+                        efficitur tempus, dui nisl tempus ligula, vel vestibulum dui dui at justo. Mauris porta
+                        justo ac felis tincidunt, vitae accumsan enim tristique. Nullam rutrum turpis in velit porta
+                        lacinia. Vestibulum nec sem sed neque scelerisque gravida nec ac arcu. Proin quis efficitur
+                        dolor.
+                    </p>
+                    <p>
+                        Vivamus fermentum iaculis nisi, quis laoreet lectus luctus at. Vestibulum at metus sem. Duis
+                        a eros feugiat, volutpat nulla vitae, tempus nibh. Aenean id porttitor enim. Morbi consequat
+                        erat velit, id tincidunt eros venenatis vel. Etiam ultrices pellentesque tempor. Sed a
+                        scelerisque orci. Vivamus sagittis blandit dui ac feugiat. Praesent consequat viverra quam
+                        ut placerat. Ut dignissim efficitur arcu vel sodales. Donec dignissim mollis arcu eget
+                        convallis. Phasellus vitae faucibus odio, non rutrum nisl. Donec non nunc sit amet nisi cursus
+                        commodo. Quisque nibh ipsum, maximus quis arcu et, viverra blandit elit. Donec sem enim,
+                        lobortis vitae dignissim eget.
+                    </p>
+                    
+                    
+                    <h5 class="p-1">Find us on socials!</h5>
+                    
+
+                    <div>
+                        <!-- links to social media pages -->
+                        <a href="https://www.instagram.com/robynheslop_photos/?hl=en" target="_blank"><i class="fab fa-instagram fa-2x p-1"></i></a>
+                        <a href="https://www.https://www.linkedin.com/in/robyn-heslop-bb08751a7/" target="_blank"><i class="fab fa-linkedin fa-2x p-1"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <!-- classes centre text + ID about positioning on page -->
+        <nav class="navbar justify-content-center footer-copyright">
+            <span class="nav-item p-3">© Copyright</span>
+        </nav>
+    </footer>
+
 </body>

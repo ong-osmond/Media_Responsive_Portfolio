@@ -36,112 +36,100 @@
 
 <body class="Site">
 
+    <!-- nav bar collapsing when viewport is smaller than MD -->
+    <nav class="navbar navbar-expand-md" role='navigation'>
 
-    <div id="wrapper">
-        <nav class="navbar navbar-expand-md" role='navigation'>
+        <!-- highlight of navbar -->
+        <span class="navbar-text">Robyn Heslop</span>
 
-            <span class="navbar-brand">Robyn Heslop</span>
+        <!-- toggle display NONE -->
+        <button class="navbar-toggler d-none"></button>
 
-            <button class="navbar-toggler d-none" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- when navbar collapses (smaller than MD) show content -->
+        <div class="collapse navbar-collapse show">
 
-            <div class="collapse navbar-collapse show" id="navbarTogglerDemo02">
-                <ul class="navbar-nav flex-row ml-md-auto d-md-flex justify-content-sm-center">
+            <!-- list horizontally + float list items left size MD + centre content when size SM -->
+            <ul class="navbar-nav flex-row ml-md-auto justify-content-sm-center">
 
+                <!-- List item INDEX  -->
+                <li class="nav-item ">
+                    <!-- border to the right of item -->
+                    <!-- spacing ID to format navbar - has to be ID to overwrite bootstrap CSS -->
+                    <a class="nav-link border-right" id="about-spacing" href="index.html">About</a>
+                </li>
 
-                    <li class="nav-item ">
-                        <a class="nav-link border-right" id="about-spacing" href="index.html">About</a>
-                    </li>
+                <!-- list item PORTFOLIO -->
+                <li class="nav-item">
+                    <!-- border to the right of item -->
+                    <!-- spacing ID to format navbar - has to be ID to overwrite bootstrap CSS -->
+                    <a class="nav-link border-right" id="portfolio-spacing" href="portfolio.html">Portfolio</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link border-right" id="portfolio-spacing" href="portfolio.html">Portfolio</a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" id="contact-spacing" href="contact.html">Contact<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-            </div>
-
-
-        </nav>
-
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="page-heading">Contact</h2>
-
-                </div>
-
-            </div>
-
-            <div class="row">
+                <!-- list item CONTACT ACTIVE -->
+                <li class="nav-item active">
+                    <!-- end of list - no right border -->
+                    <!-- spacing ID to format navbar - has to be ID to overwrite bootstrap CSS -->
+                    <a class="nav-link" id="contact-spacing" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
 
 
-                <div class="col-md-12">
+    </nav>
 
 
 
-                    <form>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput">Name</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter name">
-                        </div>
-
-
-
-
-
-
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" aria-describedby="emailHelp"
-                                placeholder="Enter email">
-                        </div>
-
-
-
-
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea class="form-control" placeholder="Write a brief message here" rows="6"></textarea>
-                        </div>
-
-
-
-
-                        <div class="form-check">
-                            <button type="submit" class="btn">Submit</button>
-                        </div>
-                    </form>
-
-
-
-                    <div class="push"></div>
-
-                </div>
+    <div class="container">
+        <!-- Row 1 -->
+        <div class="row">
+            <!-- heading fills 12 colums  -->
+            <div class="col-md-12">
+                <h2 class="page-heading">Contact</h2>
 
             </div>
-
-
-        <div class=flex-grow-1></div>
-
 
         </div>
 
-        <footer class="footer">
-            <nav class="navbar d-flex justify-content-center" id="footer-copyright-notfull">
-                <span class="nav-item p-3">Copyright</span>
-            </nav>
-        </footer>
+        <!-- Row 2 -all forms  -->
+        <div class="row">
 
-    
+            <!-- forms fill container -->
+            <div class="col-md-12">
+
+                <form>
+                    <!-- name form -->
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter name">
+                    </div>
+
+                    <!-- email form -->
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <!-- message form -->
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" placeholder="Write a brief message here" rows="8"></textarea>
+                    </div>
+
+                    <!-- button to submit data -->
+                    <div class="form-check">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+
+    <footer class="footer">
+        <!-- classes for footer + ID about positioning on page -->
+        <nav class="navbar justify-content-center footer-copyright">
+            <!-- footer content, padding3 -->
+            <span class="nav-item p-3">© Copyright</span>
+        </nav>
+    </footer>
 
 </body>
