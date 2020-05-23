@@ -19,12 +19,12 @@ HTML Validated with https://www.freeformatter.com/
 
 Sample index page 
 
-![Index Page](images/index.screenshot.png)
+![Index Page](assets/images/index.screenshot.png)
 
 Sample portfolio page 
 
-![Portfolio Page](images/port.screenshot.png)
+![Portfolio Page](assets/images/port.screenshot.png)
 
 Sample contact page 
 
-![Contact Page](images/contact.screenshot.png)
+![Contact Page](assets/images/contact.screenshot.png)
