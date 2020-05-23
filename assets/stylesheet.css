@@ -185,15 +185,6 @@ h5 {
     
 
 
-/* MEDIA QUERIES */
-
-@media (max-width: 575.98px) {
-    .container {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-}
-
 
 /* collapsed navbar occurs on ANY SCREEN 767 OR SMALLER */
 @media (max-width: 767.98px) {
