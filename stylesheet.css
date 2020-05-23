@@ -119,7 +119,7 @@ li a {
     /* set image width to 100% of container... */
     width: 100%;
     /* ... up to 450px */
-    max-width: 450px;
+    max-width: 500px;
     /* float it left */
     float: left;
     /* padding for the image */
@@ -210,7 +210,7 @@ h5 {
  @media screen and (min-width: 980px) {
     .container {
         /* stop container filling screen on larger screens  */
-        width: 66%;
+        width: 70%;
     }
  }
 
